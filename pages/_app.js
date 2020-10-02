@@ -18,7 +18,7 @@ export default class Layout extends App {
             href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;600&display=swap"
             rel="stylesheet"
           ></link>
-          <meta property="og:image" content="/static/tienda/oferta1.jpg" />
+          <meta property="og:image" content="/static/meta.jpg" />
         </Head>
         <Nav/>
         <Component {...pageProps} />
