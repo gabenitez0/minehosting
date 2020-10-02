@@ -212,7 +212,7 @@ export default function Services() {
 
       <style jsx>{`
         section {
-          padding: 40px 30px 20px 0;
+          padding: 70px 0 20px;
           width: 100%;
         }
         .services {
