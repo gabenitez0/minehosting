@@ -40,13 +40,13 @@ export default function Services() {
       id: 2,
       img: "/static/tienda/oferta1.jpg",
       title: "NETHERITE 8GB",
-      price: "28.00",
+      price: "32.00",
       features: [
         "Intel Core i9-9900K",
         "4 vCores",
         "8 GB DDR4 RAM",
         "80 GB SSD NVMe",
-        "Panel Pterodactyl: +$4 USD",
+        "Panel Pterodactyl",
         "Java - Bedrock",
         "Anti DDoS",
         "Soporte técnico"
@@ -56,13 +56,13 @@ export default function Services() {
       id: 3,
       img: "/static/tienda/oferta1.jpg",
       title: "EXTREME 16GB",
-      price: "52.00",
+      price: "56.00",
       features: [
         "Intel Core i9-9900K",
         "8 vCores",
         "16 GB DDR4 RAM",
         "160 GB SSD NVMe",
-        "Panel Pterodactyl: +$4 USD",
+        "Panel Pterodactyl",
         "Java - Bedrock",
         "Anti DDoS",
         "Soporte técnico"
