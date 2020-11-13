@@ -60,7 +60,6 @@ export default function Producto({r}) {
     padding: 0;
     margin: 0;
     line-height: 2em;
-    font-weight: 600;
   }
   .buy-buttons{
     margin-top: 20px;
@@ -69,6 +68,7 @@ export default function Producto({r}) {
     background: #ffc439;
     color: #003087;
     width: 100%;
+    border-radius: 2px;
   }
   div.button-primary:hover, a.button-primary:hover{
     box-shadow: none
@@ -118,25 +118,24 @@ export default function Producto({r}) {
     padding-left: 30px;
   }
   .service div {
-    margin: 10px auto 20px;
+    margin: 20px auto 30px;
   }
   :global(.services.promo) .service h3, :global(.services.promo) .modal h2 {
     font-weight: 600
   }
   .service {
     width: calc((100% / 4) - 52px);
-    padding: 20px;
+    padding: 30px 20px;
     margin-right: 10px;
     margin-bottom: 20px;
     text-align: center;
-    border: 1px solid #e8ecef;
-    border-radius: 4px;
+    border: 1px solid rgb(0 172 236 / 0.3);
     transition: all .2s ease;
     text-decoration: none;
-    cursor: pointer;
   }
   .service:hover{
-      box-shadow: rgba(39, 79, 117, 0.2) 0px 40px 90px -30px;
+      box-shadow: rgb(99 181 239 / 20%) 0px 40px 90px -30px;
+      border: 1px solid rgb(0 172 236 / 1);
   }
   
   @media (max-width: 1219px) {

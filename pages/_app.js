@@ -15,7 +15,7 @@ export default class Layout extends App {
           <link rel="icon" href="/static/favicon.ico" />
           <meta name="viewport" content="width=device-width,initial-scale=1" />
           <link
-            href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;600&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Open-Sans:wght@300;400;600&display=swap"
             rel="stylesheet"
           ></link>
           <meta property="og:image" content="/static/discord.png" />
@@ -30,12 +30,12 @@ export default class Layout extends App {
           }
           :root {
             --color-primary: #00acec;
-            --color-secondary: #333;
+            --color-secondary: #444;
             --color-tertiary: rgba(52, 61, 72, 0.8);
           }
           html,
           body {
-            font-family: Ubuntu, sans-serif;
+            font-family: Open Sans, sans-serif;
             margin: 0;
             overflow-x: hidden;
             scroll-behavior: smooth;
@@ -81,13 +81,13 @@ export default class Layout extends App {
             margin-top: 0px;
             margin-bottom: 0px;
             font-size: 16px;
-            color: var(--color-tertiary);
+            color: var(--color-secondary);
             line-height: 2.1;
           }
           ul, ol{
             padding-left: 20px;
             line-height: 25px;
-            color: var(--color-tertiary);
+            color: var(--color-secondary);
           }
           .title-section {
             box-sizing: border-box;
@@ -116,7 +116,6 @@ export default class Layout extends App {
             justify-content: center;
             color: rgb(255, 255, 255);
             background-color: var(--color-primary);
-            border-radius: 4px;
             font-family: inherit;
             font-weight: 700;
             text-decoration: none;
@@ -171,9 +170,6 @@ export default class Layout extends App {
             }
             h1.h2 {
               font-size: 26px;
-            }
-            h2 {
-              font-size: 24px;
             }
             h3 {
               font-size: 20px;

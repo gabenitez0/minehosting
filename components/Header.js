@@ -39,7 +39,7 @@ export default function HeaderComp({page}) {
           .title {
             width: 100%;
             box-sizing: border-box;
-            text-shadow: 1px 1px 2px rgb(39 4 46); 
+            text-shadow: 1px 1px 2px #444; 
           }
           h1{
             color: white;
@@ -53,15 +53,16 @@ export default function HeaderComp({page}) {
             line-height: 1.5em;
           }
           .buttons {
-            margin-top: 20px;
+            margin-top: 40px;
           }
           .link{
-            border-radius: 4px;
-            padding: 0;
+            padding: 0 25px;
+            background: var(--color-primary);
+            color: white;
+            text-shadow: 0 0 black;
           }
           .link:hover{
-            background: rgb(255 255 255 / 25%);
-            padding: 0 15px;
+            background: rgb(129 212 243 / 30%);
           }
           .button-primary{
             display: none;

@@ -13,6 +13,9 @@ export default function Nav() {
           <Link href="/">
             <a>Servidores Dedicados</a>
           </Link>
+          <Link href="">
+            <a href="http://discord.minehosting.fun/" target="_blank">Discord</a>
+          </Link>
         </div>
       </div>
       <style jsx global>{`
