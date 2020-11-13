@@ -29,6 +29,8 @@ export default function HeaderComp({page}) {
             margin: auto;
             padding-left: 30px;
             padding-right: 30px;
+            padding-top: 50px;
+            padding-bottom: 30px;
           }
           header{
             width: 100%;

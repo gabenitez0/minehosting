@@ -36,23 +36,6 @@ export default function IndexPage() {
       <Footer />
 
       <style jsx>{`
-        :global(.nav){
-          position: initial;
-          padding: 20px 0;
-          width: 100%
-        }
-        :global(.links a){
-          color: var(--color-secondary);
-        }
-        :global(a h2){
-          color: var(--color-primary);
-        }
-        :global(section#header){
-          height: 50vh;
-          min-height: 250px;
-          padding-top: 50px;
-          padding-bottom: 30px;
-        }
         .sidebar{
           display: flex;
         }

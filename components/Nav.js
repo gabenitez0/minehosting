@@ -20,13 +20,9 @@ export default function Nav() {
       </div>
       <style jsx global>{`
         .nav {
-          position: absolute;
           padding: 20px 0;
-          display: flex;
-          justify-content: space-between;
-          max-width: 750px; 
-          align-items: center;
-          width: calc(100% - 60px);
+          width: 100%;
+          text-align: center;
         }
         a h2{
           color: white;
@@ -41,24 +37,29 @@ export default function Nav() {
         .logo:hover {
           cursor: pointer;
         }
-        .links :global(a) {
-          text-decoration: none
-          margin-left: 20px;
-          font-weight: 400;
-        }
-        .links :global(a:hover) {
-          border-bottom: 1px solid;
+        .links{
+          margin: 20px 0 0;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
         }
         .links a {
-          color: white;
-          margin-left: 30px;
+          color: var(--color-secondary);
+          margin: 0 20px 10px;
           text-decoration: none;
           font-weight: 400;
           font-size: 16px;
         }
+        .links :global(a:hover) {
+          border-bottom: 1px solid;
+        }
         @media screen and (min-width: 992px){
           .nav{
+            display: flex;
+            flex-wrap: wrap;
             max-width: 970px; 
+            justify-content: space-between;
+            align-items: center;
           }
         }
         @media screen and (min-width: 1220px){
@@ -67,10 +68,6 @@ export default function Nav() {
           }
         }
         @media screen and (max-width: 567px){
-          .logo {
-            height: 35px;
-            margin: -5px 0;
-          }
         }
       `}</style>
     </nav>
