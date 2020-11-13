@@ -10,7 +10,7 @@ export default function IndexPage() {
 
   const page = {
     title: "Servidores Dedicados",
-    desc: "Alto rendimiento dedicado a cualquier servidor de minecraft y gameserver. Soporte por Discord.",
+    desc: "Alto rendimiento dedicado a cualquier servidor de minecraft y gameserver. Soporte y consultas por Discord.",
     button: "Discord",
     button2: "Entrar al Discord",
   }
