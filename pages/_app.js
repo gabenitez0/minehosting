@@ -15,7 +15,7 @@ export default class Layout extends App {
           <link rel="icon" href="/static/favicon.ico" />
           <meta name="viewport" content="width=device-width,initial-scale=1" />
           <link
-            href="https://fonts.googleapis.com/css2?family=Open-Sans:wght@300;400;600&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap"
             rel="stylesheet"
           ></link>
           <meta property="og:image" content="/static/discord.png" />
@@ -29,7 +29,7 @@ export default class Layout extends App {
             color: rgb(255, 255, 255);
           }
           :root {
-            --color-primary: #00acec;
+            --color-primary: #0070ba;
             --color-secondary: #444;
             --color-tertiary: rgba(52, 61, 72, 0.8);
           }

@@ -3,17 +3,18 @@ export default function Producto({r}) {
     return(<>
     <div key={r.id} className="service">
         <h3>{r.title}</h3>
-        {r.price != "Precio personalizado" ?
-        <p>${r.price} USD/mes</p>
-        :
-        <p>{r.price}</p>
+        {r.title === "Instalación Panel Pterodactyl" 
+          ? <p>${r.price} USD</p>
+          : r.price != "Precio variable" 
+          ? <p>${r.price} USD/mes</p>
+          : <p>{r.price}</p>
         }
         <div className="buy">
           <a 
           className="button-primary" 
           price={r.price} 
           name={r.title} 
-          href={r.price != "Precio personalizado" ? paypal : "https://paypal.me/1tiendaonline/"}>
+          href={r.price != "Precio variable" ? paypal : "https://paypal.me/1tiendaonline/"}>
             <sup>Pagar con</sup> Paypal
           </a>
         </div>
@@ -65,13 +66,12 @@ export default function Producto({r}) {
     margin-top: 20px;
   }
   a.button-primary{
-    background: #ffc439;
-    color: #003087;
+    background: #0070ba;
     width: 100%;
     border-radius: 2px;
   }
-  div.button-primary:hover, a.button-primary:hover{
-    box-shadow: none
+  a.button-primary:hover{
+    background: #48a6e4;
   }
   a img{
     max-height: 20px
@@ -135,7 +135,7 @@ export default function Producto({r}) {
   }
   .service:hover{
       box-shadow: rgb(99 181 239 / 20%) 0px 40px 90px -30px;
-      border: 1px solid rgb(0 172 236 / 1);
+      border: 1px solid var(--color-primary);
   }
   
   @media (max-width: 1219px) {

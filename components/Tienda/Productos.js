@@ -73,40 +73,42 @@ export default function Services() {
   const complementarios = [
     {
       id: 0,
-      title: "Dominio Personalizado",
-      price: "Precio personalizado",
+      img: "/static/tienda/5000tokens.jpg",
+      title: "Instalación Panel Pterodactyl",
+      price: 10,
       features: [
-        "miserver.mineserver.fun",
-        "miserver.minehosting.fun",
-        "Otros (consultar)"
+        "Panel de control autoadministrable. Puedes crear servidores con diferentes especificaciones, bases de datos, usuarios y mucho más con simples clicks.",
       ]
     },
     {
       id: 1,
-      img: "/static/tienda/5000tokens.jpg",
-      title: "Seguridad Avanzada",
-      price: "Precio personalizado",
+      title: "Dominio Personalizado",
+      price: "Precio variable",
       features: [
-        "Protección Anti BOTs",
-        "Protección Anti Hacks",
-        "Protección Anti X-Ray"
+        "Ejemplos:",
+        "miserver.mineserver.fun",
+        "miserver.minehosting.fun",
+        "miserver.wtf",
+        "miserver.com",
+        "miserver.net",
+        "Otros (consultar)"
       ]
     },
     {
       id: 2,
       img: "/static/tienda/5000tokens.jpg",
       title: "Bot Discord + Hosting",
-      price: "Precio personalizado",
+      price: "Precio variable",
       features: [
-        "Responde de forma automática hasta a 5 mensajes configurables sin necesidad de escribir un comando.",
-        "Solicita una prueba por discord"
+        "Responde de forma automática a mensajes configurables sin necesidad de escribir un comando.",
+        "Solicita una prueba por discord."
       ]
     },
     {
       id: 3,
       img: "/static/tienda/5000tokens.jpg",
-      title: "Configuración del server",
-      price: "Precio personalizado",
+      title: "Configuración del server de mc",
+      price: "Precio variable",
       features: [
         "Config Plugins",
         "Config Paper / Spigot",

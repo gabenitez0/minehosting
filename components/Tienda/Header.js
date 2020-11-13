@@ -13,10 +13,7 @@ export default function HeaderComp() {
       <style jsx>
         {`
           section {
-            background-image: url("/static/header2.jpg");
-            background-size: cover;
-            background-position: center center;
-            background-repeat: no-repeat;
+            background-image: url("/static/footer.png");
             width: 100%;
             min-height: 50vh;
             display: flex;

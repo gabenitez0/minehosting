@@ -72,7 +72,6 @@ export default function Footer() {
 
       <style jsx>{`
         section {
-          border-top: 1px solid rgb(239, 239, 239);
           margin-top: 40px;
           position: relative;
         }

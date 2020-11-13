@@ -1,7 +1,7 @@
 export default function HeaderComp({page}) {
   return (
-    <section id="header" className="container">
-      <header>
+    <section id="header">
+      <header className="container">
         <div className="title">
           <h1>{page.title}</h1>
           <p>
@@ -21,10 +21,7 @@ export default function HeaderComp({page}) {
       <style jsx>
         {`
           section {
-            background-image: url("/static/header2.jpg");
-            background-size: cover;
-            background-position: center 80%;
-            background-repeat: no-repeat;
+            background-image: url("/static/footer.png");
             display: flex;
             align-items: center;
             height: 60vh;
@@ -39,17 +36,16 @@ export default function HeaderComp({page}) {
           .title {
             width: 100%;
             box-sizing: border-box;
-            text-shadow: 1px 1px 2px #444; 
+            text-align: center;
+            margin: auto;
           }
           h1{
-            color: white;
             margin-bottom: 10px;
             font-weight: 600;
             letter-spacing: 1px;
           }
           p{
             font-size: 20px;
-            color: snow;
             line-height: 1.5em;
           }
           .buttons {
@@ -62,7 +58,7 @@ export default function HeaderComp({page}) {
             text-shadow: 0 0 black;
           }
           .link:hover{
-            background: rgb(129 212 243 / 30%);
+            background: #48a6e4;
           }
           .button-primary{
             display: none;
@@ -87,11 +83,6 @@ export default function HeaderComp({page}) {
           @media screen and (min-width: 990px) {
             .title {
               width: 50%;
-            }
-            @media screen and (min-width: 1220px) {
-              section{
-                max-width: 1170px;
-              }
             }
           }
         `}
