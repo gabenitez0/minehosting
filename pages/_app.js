@@ -22,15 +22,14 @@ export default class Layout extends App {
         </Head>
         <Nav/>
         <Component {...pageProps} />
-
-        <script src="https://www.paypal.com/sdk/js?client-id=AUz4sZaei_S9MSlqUwkn7t4pDFbE8RMFjpaHxfhyWm6nZyVnWqiu1yQkEtz5tn2GyuIvb2uwUAjg3G2n&locale=es_ES"></script>
+        
         <style jsx global>{`
           ::selection {
             background: rgb(51, 51, 51);
             color: rgb(255, 255, 255);
           }
           :root {
-            --color-primary: royalblue;
+            --color-primary: steelblue;
             --color-secondary: #333;
             --color-tertiary: rgba(52, 61, 72, 0.8);
           }
@@ -117,20 +116,17 @@ export default class Layout extends App {
             justify-content: center;
             color: rgb(255, 255, 255);
             background-color: var(--color-primary);
-            min-height: 40px;
             border-radius: 4px;
             font-family: inherit;
             font-weight: 700;
             text-decoration: none;
-            text-transform: capitalize;
-            padding: 10px 40px;
+            padding: 10px;
             border: 0px;
             transition: all 0.3s ease 0s;
             box-sizing: border-box;
             min-width: 120px;
             font-size: 14px;
             letter-spacing: 1px;
-            text-transform: uppercase;
           }
           .button-primary:hover {
             box-shadow: rgb(161 180 234 / 40%) 0px 9px 20px -5px;
@@ -195,7 +191,7 @@ export default class Layout extends App {
               max-width: 750px;
             }
             h1 {
-              font-size: 42px;
+              font-size: 36px;
             }
             h1.h2 {
               font-size: 30px;
@@ -207,9 +203,6 @@ export default class Layout extends App {
           @media (min-width: 992px) {
             .container {
               max-width: 970px;
-            }
-            h1 {
-              font-size: 45px;
             }
             h1.h2 {
               font-size: 40px;

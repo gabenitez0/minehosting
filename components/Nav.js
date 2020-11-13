@@ -11,11 +11,8 @@ export default function Nav() {
         </Link>
         <div className="links">
           <Link href="/">
-            <a>Nuestros Planes</a>
+            <a>Servidores Dedicados</a>
           </Link>
-          <a href="https://panel.minehosting.fun/" target="_blank">
-            Panel
-          </a>
         </div>
       </div>
       <style jsx global>{`
@@ -52,9 +49,9 @@ export default function Nav() {
         .links a {
           color: white;
           margin-left: 30px;
-          letter-spacing: 1px;
           text-decoration: none;
-          font-weight: 400
+          font-weight: 400;
+          font-size: 16px;
         }
         @media screen and (min-width: 992px){
           .nav{

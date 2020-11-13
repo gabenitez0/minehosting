@@ -9,8 +9,8 @@ export default function IndexPage() {
 
 
   const page = {
-    title: "Nuestros Planes",
-    desc: "Cuando realices tu pedido, te contactaremos por Discord para darte los datos de acceso a tu Panel.",
+    title: "Servidores Dedicados",
+    desc: "Alto rendimiento dedicado a cualquier servidor de minecraft y gameserver. Soporte por Discord.",
     button: "Discord",
     button2: "Entrar al Discord",
   }
@@ -18,14 +18,14 @@ export default function IndexPage() {
   return (
     <>
       <Head>
-      <title>Minecraft Hosting y Soporte de Alta Calidad | MineHosting</title>
+      <title>Servidores Dedicados de Alto Rendimiento | MineHosting</title>
         <meta
           name="description"
-          content="Consigue el hosting de minecraft que estás buscando, hostings y servicios de alta calidad, garantizamos que funcione sin lag."
+          content="Servidores dedicados para minecraft. Tu servidor de minecraft sin lag garantizado."
         />
         <meta
           name="keywords"
-          content="minecraft, hosting, vps, server, servidor, capitalmc, server minecraft, spigot, bukkit, paper, towny, survival, vanilla"
+          content="minecraft, servidor dedicado, hosting, vps, server, servidor, capitalmc, server minecraft, spigot, bukkit, paper, towny, survival, vanilla"
         />
       </Head>
 

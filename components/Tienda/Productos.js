@@ -7,138 +7,74 @@ export default function Services() {
     {
       id: 0,
       img: "/static/tienda/oferta1.jpg",
-      title: "IRON 2GB",
-      price: "8.00",
+      title: "Aguile PRO i5",
+      price: 85,
       features: [
-        "Intel Core i9-9900K CPU",
-        "1 vCores",
-        "2 GB DDR4 RAM",
-        "20 GB SSD NVMe",
-        "Panel Pterodactyl",
-        "Java - Bedrock",
+        "Intel Core i5 9600K CPU",
+        "6 Cores @3,7 GHz / 6T",
+        "64 GB DDR4 RAM",
+        "2 x 480 GB SSD",
+        "Intel Graphics UHD 630",
+        "1 Gbps Ancho de banda",
         "Anti DDoS",
-        "Soporte técnico"
+        "Soporte en español"
       ]
     },
     {
       id: 1,
       img: "/static/tienda/oferta1.jpg",
-      title: "DIAMOND 4GB",
-      price: "16.00",
+      title: "Aguile PRO i7",
+      price: 105,
       features: [
-        "Intel Core i9-9900K",
-        "2 vCores",
-        "4 GB DDR4 RAM",
-        "40 GB SSD NVMe",
-        "Panel Pterodactyl",
-        "Java - Bedrock",
+        "Intel Core i7 9700K CPU",
+        "8 Cores @3,6 GHz / 8T",
+        "64 GB DDR4 RAM",
+        "2 x 960 GB SSD",
+        "Intel Graphics UHD 630",
+        "1 Gbps Ancho de banda",
         "Anti DDoS",
-        "Soporte técnico"
+        "Soporte en español"
       ]
     },
     {
       id: 2,
       img: "/static/tienda/oferta1.jpg",
-      title: "NETHERITE 8GB",
-      price: "32.00",
+      title: "Aguile PRO i9",
+      price: 115,
       features: [
-        "Intel Core i9-9900K",
-        "4 vCores",
-        "8 GB DDR4 RAM",
-        "80 GB SSD NVMe",
-        "Panel Pterodactyl",
-        "Java - Bedrock",
+        "Intel Core i9 9900K CPU",
+        "8 Cores @3,6 GHz / 16T",
+        "64 GB DDR4 RAM",
+        "2 x 960 GB SSD",
+        "Intel Graphics UHD 630",
+        "1 Gbps Ancho de banda",
         "Anti DDoS",
-        "Soporte técnico"
+        "Soporte en español"
       ]
     },
     {
       id: 3,
       img: "/static/tienda/oferta1.jpg",
-      title: "EXTREME 16GB",
-      price: "56.00",
+      title: "Aguile PRO R9",
+      price: 135,
       features: [
-        "Intel Core i9-9900K",
-        "8 vCores",
-        "16 GB DDR4 RAM",
-        "160 GB SSD NVMe",
-        "Panel Pterodactyl",
-        "Java - Bedrock",
+        "AMD Ryzen 9 3900x CPU",
+        "12 Cores @3,6GHz / 24T",
+        "64 GB DDR4 RAM",
+        "1 TB SSD NVMe",
+        "GF GT 710 1 GB",
+        "1 Gbps Ancho de banda",
         "Anti DDoS",
-        "Soporte técnico"
+        "Soporte en español"
       ]
-    },
+    }
   ];
 
-  const medioRendimiento = [
+  const complementarios = [
     {
       id: 0,
-      img: "/static/tienda/vip.jpg",
-      title: "COW 8GB",
-      price: "12.00",
-      features: [
-        "Intel Xeon E5-3630v4",
-        "8 GB RAM",
-        "160 GB SSD",
-        "Panel Pterodactyl",
-        "Java - Bedrock",
-        "Anti DDoS",
-        "Soporte técnico"
-      ]
-    },
-    {
-      id: 1,
-      img: "/static/tienda/vip+.jpg",
-      title: "ZOMBIE 15GB",
-      price: "20.00",
-      features: [
-        "Intel Xeon E5-3630v4",
-        "15 GB RAM",
-        "320 GB SSD",
-        "Panel Pterodactyl",
-        "Java - Bedrock",
-        "Anti DDoS",
-        "Soporte técnico"
-      ]
-    },
-    {
-      id: 2,
-      img: "/static/tienda/500tokens.jpg",
-      title: "WITCH 30GB",
-      price: "38.00",
-      features: [
-        "Intel Xeon E5-3630v4",
-        "30 GB RAM",
-        "700 GB SSD",
-        "Panel Pterodactyl",
-        "Java - Bedrock",
-        "Anti DDoS",
-        "Soporte técnico"
-      ]
-    },
-    {
-      id: 3,
-      img: "/static/tienda/1000tokens.jpg",
-      title: "WITHER 60GB",
-      price: "74.00",
-      features: [
-        "Intel Xeon E5-3630v4",
-        "60 GB RAM",
-        "1600 GB SSD",
-        "Panel Pterodactyl",
-        "Java - Bedrock",
-        "Anti DDoS",
-        "Soporte técnico"
-      ]
-    },
-  ];
-
-  const tokens = [
-    {
-      id: 0,
-      img: "/static/tienda/3000tokens.jpg",
       title: "Dominio Personalizado",
-      price: "2.00",
+      price: "Precio personalizado",
       features: [
         "miserver.mineserver.fun",
         "miserver.minehosting.fun",
@@ -149,7 +85,7 @@ export default function Services() {
       id: 1,
       img: "/static/tienda/5000tokens.jpg",
       title: "Seguridad Avanzada",
-      price: "3.00",
+      price: "Precio personalizado",
       features: [
         "Protección Anti BOTs",
         "Protección Anti Hacks",
@@ -160,7 +96,7 @@ export default function Services() {
       id: 2,
       img: "/static/tienda/5000tokens.jpg",
       title: "Bot Discord + Hosting",
-      price: "2.00",
+      price: "Precio personalizado",
       features: [
         "Responde de forma automática hasta a 5 mensajes configurables sin necesidad de escribir un comando.",
         "Solicita una prueba por discord"
@@ -170,7 +106,7 @@ export default function Services() {
       id: 3,
       img: "/static/tienda/5000tokens.jpg",
       title: "Configuración del server",
-      price: " -",
+      price: "Precio personalizado",
       features: [
         "Config Plugins",
         "Config Paper / Spigot",
@@ -183,7 +119,7 @@ export default function Services() {
   return (
     <section id="services">
       <div className="title-section">
-        <h2>Hostings de Alto Rendimiento</h2>
+        <h2>Servidores Dedicados de Alto Rendimiento</h2>
       </div>
       <div className="services promo">
         {altoRendimiento.map(r => 
@@ -192,19 +128,10 @@ export default function Services() {
       </div>
 
       <div className="title-section">
-        <h2>Hostings de Mediano Rendimiento</h2>
-      </div>
-      <div className="services">
-        {medioRendimiento.map(r => 
-          <Producto key={r.id} r={r}/>
-        )}
-      </div>
-
-      <div className="title-section">
         <h2>Servicios complementarios</h2>
       </div>
       <div className="services">
-        {tokens.map(r => 
+        {complementarios.map(r => 
           <Producto key={r.id} r={r}/>
         )}
       </div>

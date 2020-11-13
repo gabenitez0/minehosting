@@ -63,7 +63,7 @@ export default function Footer() {
     <section id="footer">
       <div className="footer container">
           <h2>MineHosting</h2>
-          <p>Servicios de Hosting y Soporte de Alta Calidad</p>
+          <p>Servidores Dedicados y Soporte de Alta Calidad</p>
           <a href="http://Discord.MineHosting.fun/" target="_blank">
             Entrar al Discord
           </a>

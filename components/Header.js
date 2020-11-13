@@ -1,7 +1,7 @@
 export default function HeaderComp({page}) {
   return (
-    <section id="header">
-      <header className="container">
+    <section id="header" className="container">
+      <header>
         <div className="title">
           <h1>{page.title}</h1>
           <p>
@@ -23,27 +23,34 @@ export default function HeaderComp({page}) {
           section {
             background-image: url("/static/header2.jpg");
             background-size: cover;
-            background-position: center 70%;
+            background-position: center 80%;
             background-repeat: no-repeat;
-            width: 100%;
             display: flex;
             align-items: center;
-            height: 100vh;
-            min-height: 550px;
+            height: 60vh;
+            min-height: 350px;
+            margin: auto;
+            padding: 0 30px;
           }
           header{
             width: 100%;
+            padding: 0
           }
           .title {
             width: 100%;
             box-sizing: border-box;
-            text-shadow: 1px 1px 2px black; 
+            text-shadow: 1px 1px 2px rgb(39 4 46); 
           }
           h1{
-            margin-bottom: 10px;
-          }
-          h1, p{
             color: white;
+            margin-bottom: 10px;
+            font-weight: 600;
+            letter-spacing: 1px;
+          }
+          p{
+            font-size: 20px;
+            color: snow;
+            line-height: 1.5em;
           }
           .buttons {
             margin-top: 20px;
@@ -79,6 +86,11 @@ export default function HeaderComp({page}) {
           @media screen and (min-width: 990px) {
             .title {
               width: 50%;
+            }
+            @media screen and (min-width: 1220px) {
+              section{
+                max-width: 1170px;
+              }
             }
           }
         `}

@@ -1,19 +1,21 @@
-import Paypal from './mediosPago/paypal';
-
-import {useState} from 'react';
 export default function Producto({r}) {
-    const [visible, setVisible] = useState(false);
-    const modal = {
-      zIndex: visible ? 10 : -1,
-      opacity: visible ? 1 : 0
-    }
-    return(
-<>
+    const paypal = "https://paypal.me/1tiendaonline/"+r.price
+    return(<>
     <div key={r.id} className="service">
         <h3>{r.title}</h3>
-        <p>${r.price} USD</p>
+        {r.price != "Precio personalizado" ?
+        <p>${r.price} USD/mes</p>
+        :
+        <p>{r.price}</p>
+        }
         <div className="buy">
-          <Paypal price={r.price} name={r.title}/>
+          <a 
+          className="button-primary" 
+          price={r.price} 
+          name={r.title} 
+          href={r.price != "Precio personalizado" ? paypal : "https://paypal.me/1tiendaonline/"}>
+            <sup>Pagar con</sup> Paypal
+          </a>
         </div>
         <ul>
             {r.features.map(f =>
@@ -22,43 +24,17 @@ export default function Producto({r}) {
         </ul>
     </div>
 
-    <div id={r.id} className="modalBg" style={modal} onClick={() => setVisible(false)}/>
-    <div id={r.id} className="modal" style={modal}>
-        <div className="imagen">
-        <img src={r.img}/>
-        </div>
-        <div className="detalles">
-        <h2>{r.title}</h2>
-        <span>${r.price} USD</span>
-        <ul>
-            {r.features.map(f =>
-            <li key={Math.random()}>{f}</li>
-            )}
-        </ul>
-        <p>Tu nick en el server:</p>
-        <input type="text"/>
-        <div className="buy-buttons">
-            <a className="button-primary" 
-            href={r.paypal} 
-            target="_blank" 
-            rel="noopener noreferrer">
-            <img src="/static/tienda/pp.svg" style={{marginRight: 5}}/><img src="/static/tienda/paypal.svg"/>
-            </a>
-            <a className="button-primary" 
-            style={{background: '#009cde', color: 'white', marginBottom: 30}} 
-            href={r.mercadopago} 
-            target="_blank" 
-            rel="noopener noreferrer">
-            MercadoPago
-            </a>
-        </div>
-          <a className="cerrar" onClick={() => setVisible(false)}> ← Cerrar </a>
-        </div>
-    </div>
 <style jsx>{`
   input{
     width: calc(100% - 20px);
     padding: 10px 8px;
+  }
+  sup{
+    top: -2px;
+    position: relative;
+    margin-right: 5px;
+    font-weight: 400;
+    letter-spacing: 0;
   }
   .cerrar{
       padding-bottom: 20px;
@@ -83,6 +59,8 @@ export default function Producto({r}) {
     list-style: none;
     padding: 0;
     margin: 0;
+    line-height: 2em;
+    font-weight: 600;
   }
   .buy-buttons{
     margin-top: 20px;
@@ -91,8 +69,6 @@ export default function Producto({r}) {
     background: #ffc439;
     color: #003087;
     width: 100%;
-    min-height: 40px;
-    margin-bottom: 10px;
   }
   div.button-primary:hover, a.button-primary:hover{
     box-shadow: none
