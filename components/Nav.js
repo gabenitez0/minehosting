@@ -6,7 +6,7 @@ export default function Nav() {
       <div className="nav">
         <Link href="/">
           <a>
-            <h2>MineHosting</h2>
+            <img className="logo" src="/static/LOGO.svg" alt="minehosting servidores dedicados"/>
           </a>
         </Link>
         <div className="links">
@@ -61,6 +61,12 @@ export default function Nav() {
         @media screen and (min-width: 1220px){
           .nav{
             max-width: 1170px; 
+          }
+        }
+        @media screen and (max-width: 567px){
+          .logo {
+            height: 35px;
+            margin: -5px 0;
           }
         }
       `}</style>

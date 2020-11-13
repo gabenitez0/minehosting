@@ -29,7 +29,7 @@ export default class Layout extends App {
             color: rgb(255, 255, 255);
           }
           :root {
-            --color-primary: steelblue;
+            --color-primary: #00acec;
             --color-secondary: #333;
             --color-tertiary: rgba(52, 61, 72, 0.8);
           }

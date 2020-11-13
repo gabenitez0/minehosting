@@ -30,11 +30,11 @@ export default function HeaderComp({page}) {
             height: 60vh;
             min-height: 350px;
             margin: auto;
-            padding: 0 30px;
+            padding-left: 30px;
+            padding-right: 30px;
           }
           header{
             width: 100%;
-            padding: 0
           }
           .title {
             width: 100%;

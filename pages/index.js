@@ -50,6 +50,8 @@ export default function IndexPage() {
         :global(section#header){
           height: 50vh;
           min-height: 250px;
+          padding-top: 50px;
+          padding-bottom: 30px;
         }
         .sidebar{
           display: flex;
