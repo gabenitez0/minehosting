@@ -18,7 +18,7 @@ export default class Layout extends App {
             href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap"
             rel="stylesheet"
           ></link>
-          <meta property="og:image" content="/static/discord.png" />
+          <meta property="og:image" content="/static/meta.jpg" />
         </Head>
         <Nav/>
         <Component {...pageProps} />
